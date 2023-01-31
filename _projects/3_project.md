@@ -3,9 +3,9 @@ layout: page
 title: project 3
 description: a project that redirects to another website
 img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+redirect: https://public.tableau.com/views/COVID-19VaccinationTracker_16750879553650/GlobalVaccineTracker?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+importance: 0
+category: 
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: COVID-19 Vaccination Tracker
+description: a Tableau practice project that produces a dashboard of COVID-19 vaccination coverage.
+img: assets/img/covid_map.png
+redirect: https://public.tableau.com/views/COVID-19VaccinationTracker_16750879553650/GlobalVaccineTracker?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
 importance: 1
-category: work
+category: fun
 ---
 
 Every project has a beautiful feature showcase page.
