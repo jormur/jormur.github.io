@@ -20,4 +20,4 @@ I'm a master's student in the [International Master’s Program of Applied Econo
 
 A Belize native, I have been living in Taiwan for more than six years now. In that time, I studied Mandarin Chinese and attained a BSc in Management and Finance from National Tsing Hua University in Hsinchu, Taiwan. My research interests are in labor and political economics.
 
-I'm personally interested in literature, art, and design!
+I'm personally interested in literature, film, and watches!
