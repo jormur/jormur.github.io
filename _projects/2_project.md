@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
-importance: 0
-category: 
+title: goodreads quotes
+description: an exercise to analyse trends in goodreads quotes.
+img: assets/img/Rplot.png
+redirect: https://github.com/jormur/goodreads-quotes-analysis/blob/main/Title.md
+importance: 2
+category: fun
 ---
 
 Every project has a beautiful feature showcase page.
