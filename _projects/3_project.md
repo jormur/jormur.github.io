@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://public.tableau.com/views/COVID-19VaccinationTracker_16750879553650/GlobalVaccineTracker?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
-importance: 0
-category: 
+title: Is Ignorance Bliss? Media Exposure and Government Confidence in a Dynamic Landscape
+description: a group project investigating the effect of exposure to media on civic trust
+img: assets/img/big_data.png
+redirect: https://github.com/jormur/Big-Data-Trust-Project/tree/main
+importance: 1
+category: work
 ---
 
 Every project has a beautiful feature showcase page.

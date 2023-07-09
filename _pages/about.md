@@ -18,6 +18,6 @@ social: true  # includes social icons at the bottom of the page
 
 I'm a master's student in the [International Master’s Program of Applied Economics and Social Development](https://imes.nccu.edu.tw/) at National Chengchi University in Taipei, Taiwan.
 
-A Belize native, I have been living in Taiwan for more than six years now. In that time, I studied Mandarin Chinese and attained a BSc in Management and Finance from [National Tsing Hua University](https://nthu-en.site.nthu.edu.tw/) in Hsinchu, Taiwan. My research interests are in labor and political economics.
+A Belize native, I have been living in Taiwan for more than six years now. In that time, I studied Mandarin Chinese and attained a BSc in Management and Finance from [National Tsing Hua University](https://nthu-en.site.nthu.edu.tw/) in Hsinchu, Taiwan. My research interests are in labor and political economics and econometrics.
 
-I'm personally interested in literature, film, and watches!
+I'm personally interested in literature, film, and fitness!

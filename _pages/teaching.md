@@ -9,8 +9,8 @@ nav_order: 5
 
 **Data Analyst Intern**
 *Taipei Financial Center Corp. (Taipei 101)* - April 2023 to Present
-- Analyze mall member data to identify trends and patterns in the behavior of tens of thousands of customers
-- Create customer profiles for the 100+ high-end international brands in the mall to inform specialized client
+- Analyze mall member data to identify trends and patterns in the behavior of hundreds of thousands of customers
+- Create customer profiles and clustered groups for the 100+ high-end international brands in the mall to inform specialized client
 marketing campaigns and increase sales and brand growth
 - Develop rich data visualizations using Tableau to communicate insights and recommendations to brands and
 companies tailored specifically to their strategies and goals
