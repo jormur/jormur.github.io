@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 0
-category: 
+title: Brick by Brick: Deconstructing the Drivers of NYC's Soaring Property Values
+description: a group project performing an empirical analysis of the factors influencing NYC real estate prices
+img: assets/img/nyc.jpg
+redirect: https://github.com/jormur/nyc-rea
+importance: 3
+category: work
 ---
 
 Every project has a beautiful feature showcase page.

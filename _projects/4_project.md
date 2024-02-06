@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 0
-category: 
+title: An Empirical Analysis of Taxi Pricing Schemes, Fraudulent Detours, and Passenger Volition
+description: a group project replicating and extending an analysis of the propensities of taxi fare fraud
+img: assets/img/seat_taxi_fare.jpg
+redirect: https://github.com/jormur/taxi-fare-fraud
+importance: 2
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
