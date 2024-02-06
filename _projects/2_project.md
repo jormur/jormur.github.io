@@ -4,7 +4,6 @@ title: goodreads quotes
 description: an exercise to analyse trends in goodreads quotes.
 img: assets/img/Rplot.png
 redirect: https://github.com/jormur/goodreads-quotes-analysis/blob/main/Title.md
-importance: 2
 category: fun
 ---
 

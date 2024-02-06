@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Brick by Brick: Deconstructing the Drivers of NYC's Soaring Property Values
+title: Brick by Brick - Deconstructing the Drivers of NYC's Soaring Property Values
 description: a group project performing an empirical analysis of the factors influencing NYC real estate prices
 img: assets/img/nyc.jpg
 redirect: https://github.com/jormur/nyc-rea
-importance: 3
 category: work
 ---
 

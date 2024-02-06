@@ -4,7 +4,6 @@ title: Is Ignorance Bliss? Media Exposure and Government Confidence in a Dynamic
 description: a group project investigating the effect of exposure to media on civic trust
 img: assets/img/big_data.png
 redirect: https://github.com/jormur/Big-Data-Trust-Project/tree/main
-importance: 1
 category: work
 ---
 

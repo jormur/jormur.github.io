@@ -4,7 +4,6 @@ title: An Empirical Analysis of Taxi Pricing Schemes, Fraudulent Detours, and Pa
 description: a group project replicating and extending an analysis of the propensities of taxi fare fraud
 img: assets/img/seat_taxi_fare.jpg
 redirect: https://github.com/jormur/taxi-fare-fraud
-importance: 2
 category: work
 ---
 
