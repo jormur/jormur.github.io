@@ -2,6 +2,7 @@ github_users:
   - jormur
 
 github_repos:
-  - jormur/goodreads-quotes-analysis
   - jormur/Big-Data-Trust-Project
+  - jormur/taxi-fare-fraud
+  - jormur/nyc-rea
   - jormur/mexpolvol
