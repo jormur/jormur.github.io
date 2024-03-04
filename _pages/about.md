@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 
 I'm a master's student in the [International Master’s Program of Applied Economics and Social Development](https://imes.nccu.edu.tw/) at [National Chengchi University](https://www.nccu.edu.tw/) in Taipei, Taiwan.
 
-Originally from Belize, I have been living in Taiwan for several years now. In that time, I have attained a BSc in Management and Finance from [National Tsing Hua University](https://nthu-en.site.nthu.edu.tw/) in Hsinchu, Taiwan, as well as professional proficiency in Mandarin Chinese (但熟能生巧！). 
+Originally from Belize, I have been living in Taiwan for several years now. In that time, I have attained a BSc in Management and Finance from [National Tsing Hua University](https://nthu-en.site.nthu.edu.tw/) in Hsinchu, Taiwan, as well as professional proficiency in Mandarin Chinese (熟能生巧！). 
 
 Alongside my studies, I have been interning for almost a year now as a data analyst at the [Taipei Financial Center Corp. (Taipei 101)](https://www.taipei-101.com.tw/en/corporate). My research interests are in political economics and econometrics.
 
