@@ -9,9 +9,10 @@ nav_order: 5
 
 **Data Analyst Intern**
 *Taipei Financial Center Corp. (Taipei 101)* - April 2023 to Present
-- Developed a novel customer lifetime value (CLV) KPI leveraging procedural data aggregation for Taipei 101’s hundreds of stores their millions of transactions. This enabled more accurate member retention analysis and segmentation, informing targeted marketing campaigns.
-- Implemented customer clustering and segmentation initiatives to create profiles of high-end luxury brands and their customer bases, facilitating informed business decisions and predictive analysis of business trajectory by examining sales and revenue history, identifying key insights.
-- Collaborated on developing a framework for client reports, contributing to increased efficiency, clarity, and time-saving in report creation. Developed rich data visualizations to communicate insights and recommendations to brands and companies tailored specifically to their strategies and goals.
+- Developed a novel customer lifetime value (CLV) KPI leveraging processual data aggregation for Taipei 101’s hundreds of stores their millions of transactions. This enabled more accurate member retention analysis and segmentation, informing targeted marketing campaigns.
+- Streamlined marketing material preparation by creating custom Python scripts to automate document handling and processing, boosting team efficiency and showcasing problem-solving abilities.
+- Implement customer clustering and segmentation initiatives to profile high-end luxury brands and their customer bases. This facilitates informed business decisions and predictive analysis by examining sales history and identifying key insights.
+- Collaborate on client report frameworks, enhancing report creation efficiency, clarity, and time-saving. Develop rich data visualizations to communicate insights and recommendations tailored to brand strategies and goals.
 
 **Graduate Teaching Assistant**
 *Introduction to Statistical Analysis* - Fall 2022
