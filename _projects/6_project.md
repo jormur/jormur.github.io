@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 0
-category: 
+title: A Spatial Panel Analysis of the Alaska Permanent Fund Dividend’s Role in Shaping Migration Patterns
+description: a novel spatial panel analysis using pioneering weighting methods to investigate the Alaska Permanent Fund Dividend’s role in shaping intrastate migration flows.
+img: assets/img/alaska.jpg
+redirect: https://github.com/jormur/pfd_migration
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
