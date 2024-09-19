@@ -3,7 +3,7 @@ layout: page
 title: goodreads quotes
 description: an exercise to analyse trends in goodreads quotes.
 img: assets/img/Rplot.png
-redirect: https://github.com/jormur/goodreads-quotes-analysis/blob/main/Title.md
+redirect: https://github.com/jormur/goodreads-quotes-analysis/
 category: fun
 ---
 
