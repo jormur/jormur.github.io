@@ -1,5 +1,5 @@
 ---
-layout: redirected
+layout: redirect
 permalink: /cv/
 title: cv
 nav: true
