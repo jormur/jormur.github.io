@@ -8,12 +8,12 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p></p>
+  more_info: >
+    <p>Taipei, Taiwan</p>
 
 news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 I just graduated from the [International Master’s Program of Applied Economics and Social Development](https://imes.nccu.edu.tw/) at [National Chengchi University](https://www.nccu.edu.tw/) in Taipei, Taiwan. My research interests are in political economics and econometrics.

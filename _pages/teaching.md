@@ -4,7 +4,7 @@ permalink: /work/
 title: work
 description: information on work roles and experience.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 **Data Analyst Intern**
