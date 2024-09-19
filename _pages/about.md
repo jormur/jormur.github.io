@@ -22,4 +22,4 @@ Originally from Belize, I have been living in Taiwan for more than 8 years now. 
 
 During my studies, I interned for more than a year as a data analyst at the [Taipei Financial Center Corp. (Taipei 101)](https://www.taipei-101.com.tw/en/corporate) in the marketing department for the mall, serving world-famous brands as clients.
 
-I'm personally interested in reading, film, and fitness!
+I'm personally interested in music, film, and basketball.
