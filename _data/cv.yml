@@ -33,7 +33,7 @@
   type: time_table
   contents:
     - title: Data Analyst Intern
-      institution: Taipei Financial Center Corp. (Taipei 101) 
+      institution: Taipei Financial Center Corp. (Taipei 101)
       year: Apr 2023 – Jun 2024
       description:
         - Developed a novel customer lifetime value (CLV) KPI leveraging processual data aggregation for Taipei 101’s hundreds of stores and their millions of transactions. This enabled more accurate member retention analysis and segmentation, informing targeted marketing campaigns.

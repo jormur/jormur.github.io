@@ -139,17 +139,7 @@
       "name": "Technical",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python",
-        "R",
-        "SQL",
-        "Tableau",
-        "STATA",
-        "LaTex",
-        "Git",
-        "Unix",
-        "Microsoft Office (Excel, Word, PowerPoint)"
-      ]
+      "keywords": ["Python", "R", "SQL", "Tableau", "STATA", "LaTex", "Git", "Unix", "Microsoft Office (Excel, Word, PowerPoint)"]
     }
   ],
   "languages": [
@@ -168,13 +158,7 @@
     {
       "name": "Economics",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Political Economics",
-        "Labor Economics",
-        "Econometrics",
-        "Economic Development",
-        "Political Violence"
-      ]
+      "keywords": ["Political Economics", "Labor Economics", "Econometrics", "Economic Development", "Political Violence"]
     }
   ],
   "projects": [
