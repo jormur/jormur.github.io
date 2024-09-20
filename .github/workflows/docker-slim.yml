@@ -4,6 +4,8 @@ name: Docker Slim
 on:
   push:
     branches:
+      - master
+      - main
       - source
     paths:
       - ".github/workflows/docker-slim.yml"
