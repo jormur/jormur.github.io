@@ -45,5 +45,11 @@ jobs:
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           fail: true
-          # Exclude problematic URLs and check only local links
-          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --exclude https://nthu-en.site.nthu.edu.tw/ https://www.nccu.edu.tw/ --verbose --no-progress '_site/**/*.html'
+          args: >
+            --offline
+            --remap '_site(/?.*)/assets/(.*) _site/assets/$2'
+            --exclude 'https://nthu-en.site.nthu.edu.tw/'
+            --exclude 'https://www.nccu.edu.tw/'
+            --verbose
+            --no-progress
+            '_site/**/*.html'
