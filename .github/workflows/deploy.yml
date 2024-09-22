@@ -1,68 +1,61 @@
-name: deploy
+name: Deploy site
 
 on:
   push:
     branches:
-      - source  # Changed from master/main to source, as per your current setup
+      - source  # Changed from master/main to source
   pull_request:
     branches:
       - source  # Changed from master/main to source
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  # Updated to v4
-
+        uses: actions/checkout@v4
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.2'  # Updated to the latest stable version
+          ruby-version: '3.0.2'  # Using the same Ruby version as original
           bundler-cache: true
-
       - name: Install deps
         run: |
           npm install -g mermaid.cli
-          pip3 install --upgrade jupyter
-
       - name: Setup deploy options
         id: setup
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [[ ${GITHUB_REF} = refs/pull/*/merge ]]; then
-            # pull request
+          if [[ ${GITHUB_REF} = refs/pull/*/merge ]]; then # pull request
             echo "SRC_BRANCH=${GITHUB_HEAD_REF}" >> $GITHUB_OUTPUT
             echo "NO_PUSH=--no-push" >> $GITHUB_OUTPUT
-          elif [[ ${GITHUB_REF} = refs/heads/* ]]; then
-            # branch, e.g. master, source etc
+          elif [[ ${GITHUB_REF} = refs/heads/* ]]; then # branch, e.g. source, master etc
             echo "SRC_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
           fi
           echo "DEPLOY_BRANCH=gh-pages" >> $GITHUB_OUTPUT
-
-      - name: Update _config.yml
+      - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
           commitChange: false
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-
-      - name: Install and Build
+      - name: Install and Build 🔧
         run: |
+          pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
           bundle exec jekyll build
-
-      - name: Purge unused CSS
+      - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
-
-      - name: Deploy website
+      - name: Deploy website 
         run: |
-          yes | bash bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }} --src ${{ steps.setup.outputs.SRC_BRANCH }} --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
-
-permissions:
-  contents: write
+          yes | bash bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }} \
+          --src ${{ steps.setup.outputs.SRC_BRANCH }} \
+          --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }}
