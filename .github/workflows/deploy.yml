@@ -72,17 +72,6 @@ jobs:
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
-      - name: Update _config.yml ⚙️
-        uses: fjogeleit/yaml-update-action@main
-        with:
-          commitChange: false
-          valueFile: "_config.yml"
-          propertyPath: "giscus.repo"
-          value: ${{ github.repository }}
-      - name: Commit changes
-        run: |
-          git add _config.yml
-          git commit -m "Update _config.yml with Giscus repo value"
       - name: Install dependencies
         run: |
           gem install bundler
