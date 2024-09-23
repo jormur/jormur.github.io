@@ -79,6 +79,10 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Commit changes
+        run: |
+          git add _config.yml
+          git commit -m "Update _config.yml with Giscus repo value"
       - name: Install dependencies
         run: |
           gem install bundler
