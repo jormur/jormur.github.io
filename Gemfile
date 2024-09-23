@@ -27,3 +27,6 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
 end
+
+# Add terser-ruby as an alternative to uglifier
+gem 'terser-ruby'
