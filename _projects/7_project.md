@@ -1,81 +1,16 @@
 ---
 layout: page
-title: project 7
-description: with background image
-img: assets/img/4.jpg
+title: Fractured Power, Fractured Peace? Examining the Reverberations of Partisan Rifts on Political Violence in Mexico
+description: A study of the dynamics of political violence and the resulting political outcomes in Mexico.
+img: assets/img/vloa_map.png
 importance: 1
-category:
-related_publications: true
+github: https://github.com/jormur/mexpolvol
+external_url: https://drive.google.com/file/d/1X5s-c3_LF1Y8TrW3xCycxR998_KwChSX/view?usp=sharing
+category: academic papers
+date: 2024-06-13
+tags: [econometrics, R, Stata]
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Abstract
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+Challenging conventional wisdom, this study unravels the complex relationships between partisan fragmentation across levels of government and organized crime's strategic use of political violence in Mexico. Leveraging a novel municipal-level dataset spanning 2018-2023 and employing synthetic difference-in-differences (SDID) estimation, we isolate the causal impacts of discrete "fragmentation shocks" on patterns of political violence. Contrary to expectations, we find that increased vertical misalignment between municipal and federal parties reduces violence targeting local authorities, suggesting criminal groups may favor cooption over confrontation amid disrupted power arrangements. While fragmentation appears to reduce threats to political elites, its effects on civilian victimization are less clear. These nuanced findings challenge prevailing theories about the relationship between political fragmentation and violence, offering new insights into how evolving partisan landscapes shape organized crime's incentives for anti-state coercion. Our results contribute to ongoing debates surrounding the political underpinnings of subnational conflicts and highlight the need for policymakers to consider the complex interplay between political structures, criminal behavior, and patterns of violence when designing interventions to strengthen democratic institutions and combat organized crime.

@@ -1,145 +1,107 @@
 {
   "basics": {
     "name": "Jordan Murillo",
-    "label": "Graduate",
-    "image": "",
+    "label": "",
+    "image": "assets/img/profile_pic.jpg",
     "email": "jordanmurillo21@gmail.com",
     "phone": "(886) 0984295805",
     "url": "https://jormur.github.io/",
     "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "TW",
-      "region": "Taipei"
+      "city": "New Taipei",
+      "countryCode": "TW"
     },
     "profiles": [
       {
-        "network": "",
-        "username": "",
-        "url": ""
+        "network": "LinkedIn",
+        "username": "jordanmur",
+        "url": "https://www.linkedin.com/in/jordanmur"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Taipei Financial Center Corp. (Taipei 101)",
+      "position": "Data Analyst Intern",
+      "url": "https://www.taipei-101.com.tw/en/corporate",
+      "startDate": "2023-04",
+      "endDate": "2024-06",
+      "summary": "Internship at Taipei 101, focusing on customer data analysis and marketing strategies.",
+      "highlights": [
+        "Developed a novel customer lifetime value (CLV) KPI leveraging processual data aggregation for Taipei 101's hundreds of stores and their millions of transactions.",
+        "Streamlined marketing material preparation by creating custom Python scripts to automate document handling and processing.",
+        "Implemented customer clustering and segmentation initiatives for high-end luxury brands, analyzing sales history to profile customer bases and generate insights."
+      ]
     }
   ],
   "education": [
     {
-      "institution": "National Chengchi University, Taipei, Taiwan",
+      "institution": "National Chengchi University",
       "location": "Taipei, Taiwan",
-      "url": "https://www.uzh.ch/",
+      "url": "https://www.nccu.edu.tw",
       "area": "Applied Economics and Social Development",
-      "studyType": "Masters of Arts",
+      "studyType": "Master of Arts",
       "startDate": "2022-09",
       "endDate": "2024-06",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "score": "4.11/4.3 GPA",
+      "courses": [
+        "Applied Econometrics/Microeconometrics",
+        "Causal Inference and Data Science in Economics",
+        "Big Data for Social Analysis",
+        "Real Estate Market Econometrics",
+        "Local Public Finance"
+      ]
+    },
+    {
+      "institution": "National Tsing Hua University",
+      "location": "Hsinchu, Taiwan",
+      "url": "https://www.nthu.edu.tw",
+      "area": "Management and Finance",
+      "studyType": "Bachelor of Science",
+      "startDate": "2018-09",
+      "endDate": "2022-06",
+      "score": "",
+      "courses": [
+        "Business Analytics Using Computational Statistics",
+        "Management Information Systems",
+        "Financial Risk Management",
+        "Corporate Finance",
+        "Political Economy",
+        "Social Network Analysis"
+      ]
     }
   ],
+  "publications": [],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "MOFA Taiwan Scholarship",
+      "date": "2017-07",
+      "awarder": "Ministry of Foreign Affairs, Republic of China (Taiwan)",
+      "url": "https://en.mofa.gov.tw/cp.aspx?n=1325/"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "title": "NTHU IBP Distinguished Student Achievement Award",
+      "date": "2021-03",
+      "awarder": "National Tsing Hua University",
+      "url": "https://ibp.nthu.edu.tw/"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "title": "NCCU OIC Scholarship",
+      "date": "2022-10",
+      "awarder": "National Chengchi University",
+      "url": "https://www.nccu.edu.tw/"
     }
   ],
   "skills": [
     {
-      "name": "Technical",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": ["Python", "R", "SQL", "Tableau", "STATA", "LaTex", "Git", "Unix", "Microsoft Office (Excel, Word, PowerPoint)"]
+      "name": "Programming",
+      "level": "",
+      "keywords": ["R", "Python", "SQL", "Stata"]
+    },
+    {
+      "name": "Tools",
+      "level": "",
+      "keywords": ["Tableau", "Git", "Unix", "LaTeX", "Microsoft Office"]
     }
   ],
   "languages": [
@@ -150,25 +112,37 @@
     },
     {
       "language": "Mandarin",
-      "fluency": "Fluent",
+      "fluency": "Proficient",
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Economics",
-      "icon": "fa-solid fa-tag",
-      "keywords": ["Political Economics", "Labor Economics", "Econometrics", "Economic Development", "Political Violence"]
-    }
-  ],
+  "interests": [],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Fractured Power, Fractured Peace? Partisan Rifts on Political Violence in Mexico",
+      "description": "Thesis",
+      "highlights": [
+        "Employed advanced econometric techniques in R and Stata, including synthetic difference-in-differences and Poisson pseudo-likelihood fixed effects regression.",
+        "Developed new approaches to investigate how institutional factors influence anti-state actors' incentives for violence.",
+        "Produced novel insights and policy recommendations to insulate governance from criminal influence and promote stable democratic institutions."
+      ],
+      "keywords": [],
+      "startDate": "",
+      "endDate": "2024-06",
+      "url": "https://drive.google.com/file/d/1X5s-c3_LF1Y8TrW3xCycxR998_KwChSX/view?usp=sharing"
+    },
+    {
+      "name": "A Spatial Analysis of the Alaska Permanent Fund Dividend in Shaping Migration Patterns",
+      "description": "",
+      "highlights": [
+        "Conducted a novel spatial panel data analysis in R by creating a custom spatial weights matrix based on migration flows.",
+        "Demonstrated expert data wrangling abilities by sourcing, compiling, and harmonizing over 20,000 observations from multiple national datasets.",
+        "Explored previously unexamined impacts of Alaska's universal basic income program on migration patterns."
+      ],
+      "keywords": [],
+      "startDate": "",
+      "endDate": "2024-06",
+      "url": "https://drive.google.com/file/d/1MI-hgVgqnV4Ruq0hIy_ejLly1srfqtjo/view?usp=sharing"
     }
   ]
 }

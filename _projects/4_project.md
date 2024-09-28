@@ -3,78 +3,19 @@ layout: page
 title: An Empirical Analysis of Taxi Pricing Schemes, Fraudulent Detours, and Passenger Volition
 description: a group project replicating and extending an analysis of the propensities of taxi fare fraud
 img: assets/img/seat_taxi_fare.jpg
-redirect: https://github.com/jormur/taxi-fare-fraud
-category: work
+github: https://github.com/jormur/taxi-fare-fraud
+external_url: https://drive.google.com/file/d/12QpIbYMjgQjB9MN9309RcHoWVOE0pBwp/view?usp=sharing
+category: academic papers
+date: 2024-02-06
+tags: [econometrics, python, R]
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project entails the replication and extension of the following publication:
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Liu, Ting and Vergara-Cobos, Estefania and Zhou, Yiyi, Pricing Schemes and Seller Fraud: Evidence from New York City Taxi Rides (March 16, 2017). Available at SSRN: https://ssrn.com/abstract=2934437 or http://dx.doi.org/10.2139/ssrn.2934437
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Utilizing data sourced from the New York City Taxi & Limousine Commission: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+# Original Abstract
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+Different pricing schemes gives sellers different financial incentives to defraud consumers. Using rich microdata on New York City taxi rides, we examine the differences in traveled distance, duration and fare between trips taken by non-local passengers and those by comparable local passengers. We find that, for trips subject to a two-part tariff, the discrepancies are larger when the variable rate is higher, or when the expected post-dropoff occupancy is lower; furthermore, the impact of the post-dropoff occupancy is more pronounced when the variable rate is higher. In contrast, trips subject to a flat fare scheme do not exhibit these patterns.

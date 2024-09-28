@@ -3,78 +3,17 @@ layout: page
 title: Brick by Brick - Deconstructing the Drivers of NYC Soaring Property Values
 description: a group project performing an empirical analysis of the factors influencing NYC real estate prices
 img: assets/img/nyc.jpg
-redirect: https://github.com/jormur/nyc-rea
-category: work
+github: https://github.com/jormur/nyc-rea
+external_url: https://drive.google.com/file/d/1w5ajM0PhABad5mHSrq0UrRHrn0OdU9T-/view?usp=sharing
+category: academic papers
+date: 2024-02-07
+tags: [econometrics, SAS, R]
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Abstract
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This paper examines the effects of property age, neighborhood commercial density, and lot size on residential real estate sale prices per square foot in New York City. An extensive dataset of thousands of property transactions from 2022-2023 is analyzed using OLS regressions. Building age shows a counterintuitively positive relationship with price per square foot, suggesting buyers value older, likely historic, construction. In line with expectations, commercial density demonstrates a significantly positive impact on residential property values, evidencing amenity benefits of mixed-use development. However, larger buildings relative to land area are associated with lower prices per square foot, indicating preferences for less dense housing with more surrounding open space. These findings have implications for urban policymakers, planners, developers, and researchers. The complex drivers of housing prices in New York revealed by this study highlight the need for evidence-based decision-making to balance consumer preferences, housing affordability, and sustainable urban growth. Further avenues for research include geographic and temporal analysis to assess changing dynamics in this massive metropolitan real estate market. This paper makes an empirical contribution towards deeper understanding of the nuanced factors influencing property values and promoting informed policies for equitable and vibrant cities.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+# Data
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+Sourced [here](https://www.nyc.gov/site/finance/property/property-rolling-sales-data.page).

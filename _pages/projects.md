@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: research & projects
 permalink: /projects/
-description: A  collection of my projects and interests.
+description: a  collection of my projects and research papers.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 2
+display_categories: [personal projects, academic papers]
 horizontal: false
 ---
 

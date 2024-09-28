@@ -4,7 +4,7 @@ permalink: /papers/
 title: papers
 description: past papers and projects in reversed chronological order.
 years: [2024, 2023, 2022, 2021]
-nav: true
+nav: false
 nav_order: 2
 ---
 

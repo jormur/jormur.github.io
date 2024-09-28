@@ -3,7 +3,7 @@ layout: page
 permalink: /work/
 title: work
 description: information on work roles and experience.
-nav: true
+nav: false
 nav_order: 6
 ---
 
