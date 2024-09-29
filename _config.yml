@@ -10,7 +10,7 @@ email: jordanmurillo21@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A collection of my projects and interests.
 footer_text: >
-  © Copyright 2024 Jordan A. Murillo
+
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌌 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)

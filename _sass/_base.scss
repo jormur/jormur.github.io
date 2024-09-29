@@ -1304,3 +1304,12 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+.thesis-badge {
+  background-color: #e24d3c; /* Adjust the color to your preference */
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  border-radius: 4px;
+  margin-left: 10px;
+}

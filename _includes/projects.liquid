@@ -12,7 +12,12 @@
         %}
       {% endif %}
       <div class="card-body">
-        <h2 class="card-title">{{ project.title }}</h2>
+        <h2 class="card-title">
+          {{ project.title }}
+          {% if project.title == 'Fractured Power, Fractured Peace? Examining the Reverberations of Partisan Rifts on Political Violence in Mexico' %}
+            <span class="badge thesis-badge">Master's Thesis</span>
+          {% endif %}
+        </h2>
         <p class="card-text">{{ project.description }}</p>
         <div class="row ml-1 mr-1 p-0">
           {% if project.github %}
@@ -28,7 +33,7 @@
               {% endif %}
             </div>
           {% endif %}
-          
+
           {% if project.external_url %}
             <div class="url-icon ml-3">
               <div class="icon" data-toggle="tooltip" title="Project Website">

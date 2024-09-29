@@ -5,7 +5,7 @@ permalink: /projects/
 description: a  collection of my projects and research papers.
 nav: true
 nav_order: 2
-display_categories: [personal projects, academic papers]
+display_categories: [academic papers, personal projects]
 horizontal: false
 ---
 
@@ -18,7 +18,7 @@ horizontal: false
     <h2 class="category">{{ category }}</h2>
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
+  {% assign sorted_projects = categorized_projects | sort: "date" | reverse %}
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
   <div class="container">
