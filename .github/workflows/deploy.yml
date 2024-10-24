@@ -34,6 +34,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "**.ipynb"  # Add this line
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -75,13 +76,20 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
+          sudo apt-get update && sudo apt-get install -y pandoc
           pip3 install --upgrade jupyter
+          pip3 install nbconvert ipywidgets jupyter_core
+          jupyter nbextension enable --py widgetsnbextension
           bundle install
           npm install -g mermaid.cli
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Build site 🏗
+        run: |
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
       - name: Setup deploy options
         id: setup
         run: |

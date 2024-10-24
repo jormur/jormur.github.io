@@ -13,7 +13,7 @@ footer_text: >
 
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🌌 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🌫️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://jormur.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
@@ -141,7 +141,7 @@ pagination:
   enabled: true
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 3
 
 # Giscus comments (RECOMMENDED)
@@ -197,7 +197,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: false
+  enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -270,6 +270,9 @@ defaults:
     values:
       sitemap: false
 
+jupyter_notebook:
+  theme: system  # Optional: Use system theme detection
+
 sass:
   style: compressed
 
@@ -297,8 +300,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: ["python", "jupyter", "nlp", "machine-learning", "econometrics"] # these tags will be displayed on the front page of your blog
+display_categories: ["data-science"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
