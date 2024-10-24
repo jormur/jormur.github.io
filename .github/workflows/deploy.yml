@@ -75,6 +75,7 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
+          pip3 install --upgrade jupyter
           bundle install
           npm install -g mermaid.cli
       - name: Purge unused CSS 🧹
