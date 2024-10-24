@@ -185,7 +185,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /:collection/:title/
   projects:
     output: true
@@ -271,7 +271,7 @@ defaults:
       sitemap: false
 
 jupyter_notebook:
-  theme: system  # Optional: Use system theme detection
+  theme: system # Optional: Use system theme detection
 
 sass:
   style: compressed

@@ -34,7 +34,7 @@ on:
       - main
     paths:
       - "assets/**"
-      - "**.ipynb"  # Add this line
+      - "**.ipynb" # Add this line
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -77,7 +77,7 @@ jobs:
         run: |
           gem install bundler
           sudo apt-get update && sudo apt-get install -y pandoc
-          pip3 install --upgrade jupyter
+          pip3 install --upgrade jupyter notebook
           pip3 install nbconvert ipywidgets jupyter_core
           jupyter nbextension enable --py widgetsnbextension
           bundle install

@@ -22,7 +22,6 @@ Read the full report below:
 {% assign jupyter_path = 'assets/jupyter/goodreads_notebook.ipynb' | relative_url %}
 {% capture notebook_exists %}{% file_exists assets/jupyter/goodreads_notebook.ipynb %}{% endcapture %}
 {% if notebook_exists == 'true' and page.layout == 'post' %}
-  {% jupyter_notebook jupyter_path %}
+{% jupyter_notebook jupyter_path %}
 {% endif %}
 {:/nomarkdown}
-
