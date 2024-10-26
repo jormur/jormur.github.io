@@ -119,12 +119,25 @@
   "interests": [],
   "projects": [
     {
+      "name": "Analyzing Viral Content on Goodreads: An NLP Approach to Understanding Quote Popularity",
+      "description": "",
+      "highlights": [
+        "Conducted a comprehensive analysis of viral quotes on Goodreads by combining traditional econometric techniques with advanced natural language processing (NLP) using BERT, revealing complex relationships between emotional sentiment, content characteristics, and author influence on user engagement.",
+        "Employed a diverse range of methodologies, including network analysis to identify author communities and their interconnections, machine learning algorithms for predicting quote popularity, and statistical modeling to assess the impact of quote traits—demonstrating an understanding of causal inference and behavioral economics principles.",
+        "Developed compelling visualizations to communicate key findings, such as the surprising correlation between complex emotional content and quote popularity, alongside a rigorous exploration of factors influencing engagement. The project culminated in actionable insights that bridge the gap between literary appreciation and data-driven analysis."
+      ],
+      "keywords": [],
+      "startDate": "",
+      "endDate": "2024-10",
+      "url": "https://jormur.github.io/blog/2024/goodreads/"
+    },
+    {
       "name": "Fractured Power, Fractured Peace? Partisan Rifts on Political Violence in Mexico",
       "description": "Thesis",
       "highlights": [
-        "Employed advanced econometric techniques in R and Stata, including synthetic difference-in-differences and Poisson pseudo-likelihood fixed effects regression.",
-        "Developed new approaches to investigate how institutional factors influence anti-state actors' incentives for violence.",
-        "Produced novel insights and policy recommendations to insulate governance from criminal influence and promote stable democratic institutions."
+        "Employed advanced econometric techniques in R and Stata, including synthetic difference-in-differences and Poisson pseudo-likelihood fixed effects regression, to analyze the intricate relationship between partisan fragmentation and organized crime's strategic use of political violence across Mexican municipalities from 2018-2023.",
+        "Developed new approaches to investigate how institutional factors such as intergovernmental fiscal transfers, elected coalition dynamics, and partisan power arrangements influence anti-state actors' incentives for violence, challenging conventional theoretical frameworks.",
+        "Produced novel insights and policy recommendations to insulate governance from criminal influence and promote stable democratic institutions, demonstrating problem-solving skills and creativity in addressing complex issues."
       ],
       "keywords": [],
       "startDate": "",
