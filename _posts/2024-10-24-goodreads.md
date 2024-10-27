@@ -16,7 +16,7 @@ The analysis employs multiple methodological approaches:
 - Machine learning for popularity prediction
 - Statistical analysis of quote characteristics
 
-Read the full report below:
+Read the full report below or visit the [full repository](https://github.com/jormur/goodreads-quotes-analysis):
 
 {::nomarkdown}
 {% assign jupyter_path = 'assets/jupyter/goodreads_notebook.ipynb' | relative_url %}
