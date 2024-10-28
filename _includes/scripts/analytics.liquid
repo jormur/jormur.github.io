@@ -1,21 +1,27 @@
 {% if site.enable_google_analytics %}
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X8G0P7D3D0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8G0P7D3D0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-  gtag('config', 'G-X8G0P7D3D0');
-</script>
+    gtag('config', 'G-X8G0P7D3D0');
+  </script>
 {% endif %}
 {% if site.enable_cronitor_analytics %}
   <!-- Cronitor RUM -->
-<script async src="https://rum.cronitor.io/script.js"></script>
-<script>
-    window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+  <script async src="https://rum.cronitor.io/script.js"></script>
+  <script>
+    window.cronitor =
+      window.cronitor ||
+      function () {
+        (window.cronitor.q = window.cronitor.q || []).push(arguments);
+      };
     cronitor('config', { clientKey: '2e17b31dcd2b3ce50cd9fea41fdbf1c7' });
-</script>
+  </script>
 {% endif %}
 {% if site.enable_pirsch_analytics %}
   <script
