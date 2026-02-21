@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Literata", ui-serif, Georgia, serif;
@@ -16,9 +14,9 @@
 }
 
 body {
-  @apply bg-bg-light text-text-light font-sans antialiased dark:bg-bg-dark dark:text-text-dark transition-colors duration-300;
+  @apply bg-bg-light text-text-light font-sans antialiased;
 }
 
 .utilitarian-border {
-  @apply border-primary/15 dark:border-primary/30;
+  border-color: rgba(107, 68, 35, 0.15);
 }

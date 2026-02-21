@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Code, LineChart, FileText, Database, Github, Linkedin, Mail } from 'lucide-react';
+import { Code, LineChart, FileText, Database } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -13,24 +13,27 @@ export default function Home() {
             Quantitative researcher specializing in econometric modeling and data-driven policy evaluation for emerging markets.
           </p>
           
-          {/* Contact Links */}
-          <div className="flex flex-wrap gap-4 pt-8 border-t utilitarian-border">
-            <a href="#" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-stone-800 hover:bg-stone-700 text-stone-100 dark:bg-stone-200 dark:hover:bg-stone-300 dark:text-stone-900 transition-colors font-sans text-sm font-medium">
-              <Linkedin size={18} />
-              LinkedIn
-            </a>
-            <a href="#" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-stone-800 hover:bg-stone-700 text-stone-100 dark:bg-stone-200 dark:hover:bg-stone-300 dark:text-stone-900 transition-colors font-sans text-sm font-medium">
-              <Github size={18} />
-              GitHub
-            </a>
-            <a href="mailto:contact@rivera.econ" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-stone-800 hover:bg-stone-700 text-stone-100 dark:bg-stone-200 dark:hover:bg-stone-300 dark:text-stone-900 transition-colors font-sans text-sm font-medium">
-              <Mail size={18} />
-              Mail
-            </a>
-            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-stone-800 hover:bg-stone-700 text-stone-100 dark:bg-stone-200 dark:hover:bg-stone-300 dark:text-stone-900 transition-colors font-sans text-sm font-medium">
-              <FileText size={18} />
-              CV
-            </a>
+          {/* Credentials & Contact */}
+          <div className="grid md:grid-cols-2 gap-8 pt-8 border-t utilitarian-border">
+            <div className="space-y-4">
+              <h3 className="font-mono text-xs font-bold uppercase tracking-[0.2em] opacity-50 mb-4">Credentials</h3>
+              <p className="font-mono text-sm">
+                <span className="opacity-50">Education:</span><br/>
+                BSc Economics, University of Research
+              </p>
+              <p className="font-mono text-sm">
+                <span className="opacity-50">Location:</span><br/>
+                Washington, D.C.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-mono text-xs font-bold uppercase tracking-[0.2em] opacity-50 mb-4">Contact</h3>
+              <div className="flex flex-col gap-2 font-mono text-sm">
+                <a href="mailto:contact@rivera.econ" className="hover:text-primary transition-colors">contact@rivera.econ</a>
+                <a href="/cv.pdf" className="hover:text-primary transition-colors">Download_CV_Rivera.pdf</a>
+                <a href="#" className="hover:text-primary transition-colors">LinkedIn Profile</a>
+              </div>
+            </div>
           </div>
         </div>
         

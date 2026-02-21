@@ -24,9 +24,9 @@ export default function Project() {
         <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 border-y utilitarian-border py-4 mb-12 font-mono">
           <span className="flex items-center gap-1"><Calendar size={14} /> Oct 12, 2023</span>
           <span className="flex items-center gap-1"><Clock size={14} /> 15 min read</span>
-          <a href="#" className="ml-auto flex items-center gap-2 text-primary hover:bg-primary/10 px-3 py-1.5 rounded-sm transition-colors border border-transparent hover:border-primary font-medium">
-            <Code size={14} /> View on GitHub
-          </a>
+          <button className="ml-auto flex items-center gap-1 text-primary hover:bg-primary/10 px-3 py-1 rounded-sm transition-colors border border-transparent hover:border-primary">
+            <Download size={14} /> Download .ipynb
+          </button>
         </div>
 
         {/* Notebook Start */}
@@ -173,6 +173,20 @@ model.summary()`}</code>
         </div>
       </section>
 
+      {/* Bottom Navigation */}
+      <footer className="mt-20 pt-12 border-t utilitarian-border text-center">
+        <p className="text-slate-600 text-sm mb-6 font-serif italic">Want to dive deeper into the code or the data sources?</p>
+        <div className="flex flex-wrap justify-center gap-4 font-mono">
+          <button className="flex items-center gap-2 px-6 py-2 rounded-sm bg-primary text-white hover:bg-primary/90 transition-colors">
+            <Code size={16} />
+            View on GitHub
+          </button>
+          <button className="flex items-center gap-2 px-6 py-2 rounded-sm border utilitarian-border text-primary hover:bg-primary/5 transition-colors">
+            <Mail size={16} />
+            Discuss this Project
+          </button>
+        </div>
+      </footer>
     </div>
   );
 }
