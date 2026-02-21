@@ -7,22 +7,22 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row gap-12 items-start">
         <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-serif text-primary">Alex Rivera</h1>
+          <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-serif text-primary">Jordan Murillo</h1>
           <h2 className="text-xl font-mono opacity-60 mb-8 uppercase tracking-widest">Junior Economist</h2>
           <p className="text-xl md:text-2xl leading-snug max-w-3xl font-serif mb-8">
             Quantitative researcher specializing in econometric modeling and data-driven policy evaluation for emerging markets.
           </p>
-          
+
           {/* Credentials & Contact */}
           <div className="grid md:grid-cols-2 gap-8 pt-8 border-t utilitarian-border">
             <div className="space-y-4">
               <h3 className="font-mono text-xs font-bold uppercase tracking-[0.2em] opacity-50 mb-4">Credentials</h3>
               <p className="font-mono text-sm">
-                <span className="opacity-50">Education:</span><br/>
+                <span className="opacity-50">Education:</span><br />
                 BSc Economics, University of Research
               </p>
               <p className="font-mono text-sm">
-                <span className="opacity-50">Location:</span><br/>
+                <span className="opacity-50">Location:</span><br />
                 Washington, D.C.
               </p>
             </div>
@@ -36,12 +36,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
         {/* Headshot */}
         <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-sm border utilitarian-border p-2 bg-white">
-          <img 
-            src="https://picsum.photos/seed/economist/400/400" 
-            alt="Alex Rivera" 
+          <img
+            src="https://picsum.photos/seed/economist/400/400"
+            alt="Jordan Murillo"
             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
             referrerPolicy="no-referrer"
           />

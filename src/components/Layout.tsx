@@ -33,7 +33,7 @@ export default function Layout() {
         <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="font-bold tracking-tight font-serif text-primary">Alex Rivera</span>
+              <span className="font-bold tracking-tight font-serif text-primary">Jordan Murillo</span>
             </div>
             <p className="text-xs opacity-50 uppercase tracking-widest font-mono">Economic Research & Quantitative Analysis</p>
           </div>
@@ -44,7 +44,7 @@ export default function Layout() {
           </div>
         </div>
         <div className="max-w-4xl mx-auto px-6 mt-12 pt-8 border-t utilitarian-border flex justify-between items-center text-[10px] uppercase tracking-widest opacity-40 font-mono">
-          <p>© {new Date().getFullYear()} Alex Rivera. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Jordan Murillo. All Rights Reserved.</p>
           <p>Built for utility & clarity.</p>
         </div>
       </footer>
