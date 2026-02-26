@@ -13,6 +13,11 @@
         "type": "notebook",
         "label": "View Notebook",
         "url": "/project/goodreads-virality"
+      },
+      {
+        "type": "github",
+        "label": "GitHub Repo",
+        "url": "https://github.com/jormur/goodreads-virality"
       }
     ],
     "date": "Oct 25, 2024",

@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Code } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Github } from 'lucide-react';
 import projectsData from '../data/projects.json';
 import JupyterViewer from '../components/JupyterViewer';
 
@@ -10,6 +10,8 @@ export default function Project() {
   if (!project) {
     return <div className="text-center py-24 font-mono text-muted">Project not found</div>;
   }
+
+  const githubLink = project.links.find(l => l.type === 'github');
 
   return (
     <div className="max-w-3xl mx-auto">
@@ -31,13 +33,20 @@ export default function Project() {
             {project.subtitle}
           </p>
         )}
-        
+
         <div className="flex flex-wrap items-center gap-4 text-sm text-muted border-y utilitarian-border py-4 mb-12 font-mono">
           {project.date && <span className="flex items-center gap-1"><Calendar size={14} /> {project.date}</span>}
           {project.readTime && <span className="flex items-center gap-1"><Clock size={14} /> {project.readTime}</span>}
-          <a href="#" className="ml-auto flex items-center gap-1 text-primary hover:bg-primary/10 px-3 py-1 rounded-sm transition-colors border border-transparent hover:border-primary">
-            <Code size={14} /> View on GitHub
-          </a>
+          {githubLink && (
+            <a
+              href={githubLink.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-auto flex items-center gap-1 text-primary hover:bg-primary/10 px-3 py-1 rounded-sm transition-colors border border-transparent hover:border-primary"
+            >
+              <Github size={14} /> View on GitHub
+            </a>
+          )}
         </div>
 
         {/* Notebook Start */}
