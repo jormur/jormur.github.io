@@ -1,0 +1,62 @@
+[
+  {
+    "id": "goodreads-virality",
+    "title": "Analyzing Viral Content on Goodreads",
+    "tags": [
+      "Python",
+      "NLP"
+    ],
+    "problem": "Engagement on Goodreads quotes appears unpredictable. The challenge was to determine whether quote popularity could be systematically modeled using observable content characteristics and network structure.",
+    "result": "Built a structured analytical pipeline combining econometric modeling, sentiment analysis, and author network mapping to test multiple hypotheses about engagement drivers, including: predictive modeling, similarity analysis between authors, and quantitative evaluation of textual, sentiment, and tag-based features.",
+    "links": [
+      {
+        "type": "notebook",
+        "label": "View Notebook",
+        "url": "/project/goodreads-virality"
+      }
+    ],
+    "date": "Oct 25, 2024",
+    "readTime": "15 min read",
+    "subtitle": "Using machine learning and statistics to understand quote content virality",
+    "notebookFile": "/assets/notebooks/goodreads_notebook.ipynb"
+  },
+  {
+    "id": "mexpolvol",
+    "title": "Partisan Rifts on Political Violence in Mexico",
+    "tags": [
+      "Graduate Thesis",
+      "R",
+      "Stata"
+    ],
+    "problem": "Political violence in Mexico is often assumed to destabilize electoral competition, yet the mechanisms linking partisan fragmentation and organized crime incentives remain unclear. The study examined whether misalignment across levels of government and municipal institutional structures affect the targeting of political actors.",
+    "result": "Constructed a municipal-level panel dataset (2018-2023) integrating electoral returns, fiscal transfers, and violence event data to isolate discrete fragmentation shocks. Applied synthetic difference-in-differences and Poisson fixed-effects models to estimate the causal impact of partisan fragmentation and intergovernmental dynamics on organized political violence.",
+    "links": [
+      {
+        "type": "pdf",
+        "label": "Technical Paper (PDF)",
+        "url": "https://drive.google.com/file/d/1X5s-c3_LF1Y8TrW3xCycxR998_KwChSX/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": "pfd_migration",
+    "title": "A Spatial Panel Analysis of the Alaska Permanent Fund Dividend's Role in Shaping Migration Patterns",
+    "tags": [
+      "R"
+    ],
+    "problem": "Alaska's Permanent Fund Dividend provides a long-running example of unconditional cash transfers, yet its effect on internal migration remains unclear. The study examined whether year-to-year variation in PFD payments influenced borough-level migration flows within Alaska.",
+    "result": "Constructed a 2001-2023 origin-destination panel dataset integrating migration flows, demographic indicators, wage levels, unemployment rates, and PFD payments. Estimated spatial panel models with a custom migration-based spatial weights matrix to account for geographic interdependence across boroughs.",
+    "links": [
+      {
+        "type": "pdf",
+        "label": "Technical Paper (PDF)",
+        "url": "https://drive.google.com/drive/u/0/folders/1qvt8ZHZAGo8APTwTKsM2G93En1eqCfaj"
+      },
+      {
+        "type": "github",
+        "label": "GitHub Repo",
+        "url": "https://github.com/jormur/pfd_migration"
+      }
+    ]
+  }
+]

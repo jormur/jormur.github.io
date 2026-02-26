@@ -1,5 +1,13 @@
 import { Link } from 'react-router-dom';
-import { Code, LineChart, FileText, Database } from 'lucide-react';
+import { Code, LineChart, FileText, Database, Linkedin, Github, Mail } from 'lucide-react';
+import projectsData from '../data/projects.json';
+
+const iconMap: Record<string, any> = {
+  notebook: Code,
+  dashboard: LineChart,
+  pdf: FileText,
+  github: Database
+};
 
 export default function Home() {
   return (
@@ -8,41 +16,44 @@ export default function Home() {
       <section className="flex flex-col md:flex-row gap-12 items-start">
         <div className="flex-1">
           <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-serif text-primary">Jordan Murillo</h1>
-          <h2 className="text-xl font-mono opacity-60 mb-8 uppercase tracking-widest">Junior Economist</h2>
-          <p className="text-xl md:text-2xl leading-snug max-w-3xl font-serif mb-8">
-            Quantitative researcher specializing in econometric modeling and data-driven policy evaluation for emerging markets.
+          <h2 className="text-xl font-mono text-muted mb-8 uppercase tracking-widest">Research Analyst</h2>
+          <p className="text-xl md:text-xl leading-snug max-w-3xl font-serif mb-8">
+            Originally from Belize, I moved to Taiwan on scholarship and have since built my academic and professional career in Taipei. I earned my Master's in Applied Economics from National Chengchi University, where my research focused on empirical methods and quantitative analysis.<br /><br />
+
+            I currently work as a Research Analyst at MacroMicro, where I analyze macroeconomic and financial data, contribute to research publications, and develop quant tools.<br /><br />
+
+            I'm always open to meaningful conversations. Feel free to reach out.
           </p>
 
-          {/* Credentials & Contact */}
-          <div className="grid md:grid-cols-2 gap-8 pt-8 border-t utilitarian-border">
-            <div className="space-y-4">
-              <h3 className="font-mono text-xs font-bold uppercase tracking-[0.2em] opacity-50 mb-4">Credentials</h3>
-              <p className="font-mono text-sm">
-                <span className="opacity-50">Education:</span><br />
-                BSc Economics, University of Research
-              </p>
-              <p className="font-mono text-sm">
-                <span className="opacity-50">Location:</span><br />
-                Washington, D.C.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="font-mono text-xs font-bold uppercase tracking-[0.2em] opacity-50 mb-4">Contact</h3>
-              <div className="flex flex-col gap-2 font-mono text-sm">
-                <a href="mailto:contact@rivera.econ" className="hover:text-primary transition-colors">contact@rivera.econ</a>
-                <a href="/cv.pdf" className="hover:text-primary transition-colors">Download_CV_Rivera.pdf</a>
-                <a href="#" className="hover:text-primary transition-colors">LinkedIn Profile</a>
-              </div>
+          {/* Contact */}
+          <div className="pt-8 border-t utilitarian-border">
+            <div className="flex flex-wrap gap-4 font-mono text-sm">
+              <a href="https://www.linkedin.com/in/jordanmur/" className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-alt hover:bg-surface transition-colors border utilitarian-border font-medium">
+                <Linkedin size={18} />
+                LinkedIn
+              </a>
+              <a href="mailto:jordanmurillo21@gmail.com" className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-alt hover:bg-surface transition-colors border utilitarian-border font-medium">
+                <Mail size={18} />
+                Email
+              </a>
+              <a href="https://drive.google.com/file/d/1PYt_X6mZc56uYGIUfrkCP7T8sgm0t6hd/view?usp=sharing" className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-alt hover:bg-surface transition-colors border utilitarian-border font-medium">
+                <FileText size={18} />
+                CV
+              </a>
+              <a href="https://github.com/jormur" className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-surface-alt hover:bg-surface transition-colors border utilitarian-border font-medium">
+                <Github size={18} />
+                GitHub
+              </a>
             </div>
           </div>
         </div>
 
         {/* Headshot */}
-        <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 overflow-hidden rounded-sm border utilitarian-border p-2 bg-white">
+        <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 overflow-hidden">
           <img
-            src="https://picsum.photos/seed/economist/400/400"
+            src="public/assets/img/headshot.JPG"
             alt="Jordan Murillo"
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            className="w-full h-full object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
             referrerPolicy="no-referrer"
           />
         </div>
@@ -51,112 +62,66 @@ export default function Home() {
       {/* Projects Section */}
       <section>
         <header className="mb-12 border-l-4 border-primary pl-6">
-          <h2 className="text-3xl font-black tracking-tight mb-4 font-serif text-primary">Relevant Technical Projects</h2>
-          <p className="text-lg opacity-80 leading-relaxed max-w-2xl font-serif">
-            A selection of data-driven projects focused on econometric modeling, statistical analysis, and automated reporting systems.
+          <h2 className="text-3xl font-black tracking-tight mb-4 font-serif text-primary">Relevant Projects</h2>
+          <p className="text-lg text-muted leading-relaxed max-w-2xl font-serif">
+            A selection of data-driven projects focused on econometric modeling and statistical analysis.
           </p>
         </header>
 
         <div className="space-y-12">
-          {/* Project 1 */}
-          <article className="group relative pb-12 border-b utilitarian-border last:border-0">
-            <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
-              <Link to="/project/inflation-dynamics" className="text-2xl font-bold group-hover:text-primary transition-colors font-serif">
-                Forecasting Regional Inflation Dynamics
-              </Link>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-stone-200 text-[10px] font-bold uppercase tracking-widest rounded font-mono">Python</span>
-                <span className="px-2 py-1 bg-stone-200 text-[10px] font-bold uppercase tracking-widest rounded font-mono">SQL</span>
-                <span className="px-2 py-1 bg-stone-200 text-[10px] font-bold uppercase tracking-widest rounded font-mono">Tableau</span>
+          {projectsData.map((project) => (
+            <article key={project.id} className="group relative pb-12 border-b utilitarian-border last:border-0">
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
+                {project.links.some(l => l.type === 'notebook') ? (
+                  <Link to={`/project/${project.id}`} className="text-2xl font-bold group-hover:text-primary transition-colors font-serif">
+                    {project.title}
+                  </Link>
+                ) : (
+                  <h2 className="text-2xl font-bold group-hover:text-primary transition-colors font-serif">{project.title}</h2>
+                )}
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map(tag => (
+                    <span key={tag} className="px-2 py-1 bg-surface-alt text-[10px] font-bold uppercase tracking-widest rounded font-mono">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest opacity-50 mb-2 font-mono">The Problem</h3>
-                <p className="text-sm leading-relaxed opacity-80 font-serif">
-                  Traditional consumer price indices often lag in capturing localized hyper-inflation trends in emerging markets. I needed to build a real-time tracking tool using web-scraped retail data to provide earlier warnings for policy shifts.
-                </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+                <div>
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-muted mb-2 font-mono">The Problem</h3>
+                  <p className="text-sm leading-relaxed text-foreground/80 font-serif">
+                    {project.problem}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-xs font-bold uppercase tracking-widest text-muted mb-2 font-mono">The Result</h3>
+                  <p className="text-sm leading-relaxed text-foreground/80 font-serif">
+                    {project.result}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest opacity-50 mb-2 font-mono">The Result</h3>
-                <p className="text-sm leading-relaxed opacity-80 font-serif">
-                  Developed a VAR model that outperformed standard benchmarks by 12% in short-term forecasting accuracy. Integrated results into a Tableau dashboard used by regional analysts for weekly briefing reports.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <Link to="/project/inflation-dynamics" className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline decoration-2 underline-offset-4 font-mono">
-                <Code size={16} />
-                View Notebook
-              </Link>
-              <a href="#" className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline decoration-2 underline-offset-4 font-mono">
-                <LineChart size={16} />
-                Live Dashboard
-              </a>
-            </div>
-          </article>
+              <div className="flex gap-6">
+                {project.links.map((link, i) => {
+                  const Icon = iconMap[link.type] || Code;
+                  const isInternal = link.type === 'notebook';
+                  const LinkComponent = isInternal ? Link : 'a';
 
-          {/* Project 2 */}
-          <article className="group relative pb-12 border-b utilitarian-border last:border-0">
-            <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
-              <h2 className="text-2xl font-bold group-hover:text-primary transition-colors font-serif">Labor Market Resilience Post-Automation</h2>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-stone-200 text-[10px] font-bold uppercase tracking-widest rounded font-mono">R (Tidyverse)</span>
-                <span className="px-2 py-1 bg-stone-200 text-[10px] font-bold uppercase tracking-widest rounded font-mono">Stata</span>
+                  return (
+                    <LinkComponent
+                      key={i}
+                      to={isInternal ? link.url : undefined}
+                      href={!isInternal ? link.url : undefined}
+                      className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline decoration-2 underline-offset-4 font-mono"
+                    >
+                      <Icon size={16} />
+                      {link.label}
+                    </LinkComponent>
+                  );
+                })}
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest opacity-50 mb-2 font-mono">The Problem</h3>
-                <p className="text-sm leading-relaxed opacity-80 font-serif">
-                  Assessing the impact of warehouse automation on entry-level employment rates across 50 mid-western counties. The primary challenge was reconciling disparate census data with private sector payroll estimates.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest opacity-50 mb-2 font-mono">The Result</h3>
-                <p className="text-sm leading-relaxed opacity-80 font-serif">
-                  Automated the data cleaning pipeline using R, reducing processing time from 3 days to 40 minutes. Findings showed a 4% short-term dip in employment followed by a 6% increase in technical support roles within 18 months.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <a href="#" className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline decoration-2 underline-offset-4 font-mono">
-                <FileText size={16} />
-                Technical Paper (PDF)
-              </a>
-            </div>
-          </article>
-
-          {/* Project 3 */}
-          <article className="group relative pb-12 border-b utilitarian-border last:border-0">
-            <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
-              <h2 className="text-2xl font-bold group-hover:text-primary transition-colors font-serif">Trade Flow Visualization Pipeline</h2>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-2 py-1 bg-stone-200 text-[10px] font-bold uppercase tracking-widest rounded font-mono">SQL</span>
-                <span className="px-2 py-1 bg-stone-200 text-[10px] font-bold uppercase tracking-widest rounded font-mono">D3.js</span>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest opacity-50 mb-2 font-mono">The Problem</h3>
-                <p className="text-sm leading-relaxed opacity-80 font-serif">
-                  Sanitary and phytosanitary (SPS) regulations create invisible barriers to trade. This project mapped these barriers across the EU-African corridor using 10 years of customs dispute data.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest opacity-50 mb-2 font-mono">The Result</h3>
-                <p className="text-sm leading-relaxed opacity-80 font-serif">
-                  Cleaned and normalized a database of 50,000+ entries. Created a custom Sankey visualization highlighting that SPS compliance costs effectively acted as an 8% tariff on agricultural exports from sub-Saharan Africa.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <a href="#" className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline decoration-2 underline-offset-4 font-mono">
-                <Database size={16} />
-                GitHub Repo
-              </a>
-            </div>
-          </article>
+            </article>
+          ))}
         </div>
       </section>
     </div>
