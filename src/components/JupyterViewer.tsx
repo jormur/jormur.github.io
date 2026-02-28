@@ -34,7 +34,7 @@ export default function JupyterViewer({ fileUrl }: JupyterViewerProps) {
               <div className="font-mono text-xs text-muted min-w-[60px] pt-4 select-none">
                 In [{cell.execution_count || ' '}]:
               </div>
-              <div className="flex-1 space-y-4">
+              <div className="flex-1 space-y-4 min-w-0">
                 <pre className="font-mono text-sm bg-surface-alt p-4 rounded-sm border utilitarian-border overflow-x-auto text-foreground">
                   <code>{source}</code>
                 </pre>

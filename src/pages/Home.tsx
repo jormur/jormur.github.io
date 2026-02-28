@@ -51,7 +51,7 @@ export default function Home() {
         {/* Headshot */}
         <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 overflow-hidden">
           <img
-            src="public/assets/img/headshot.JPG"
+            src="/assets/img/headshot.JPG"
             alt="Jordan Murillo"
             className="w-full h-full object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
             referrerPolicy="no-referrer"

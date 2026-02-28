@@ -1,3 +1,4 @@
+import { useEffect } from 'react'; // 1. Import useEffect
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Github } from 'lucide-react';
 import projectsData from '../data/projects.json';
@@ -5,13 +6,19 @@ import JupyterViewer from '../components/JupyterViewer';
 
 export default function Project() {
   const { id } = useParams();
+
+  // 2. Add this effect to scroll to the top on load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
   const project = projectsData.find(p => p.id === id);
 
   if (!project) {
     return <div className="text-center py-24 font-mono text-muted">Project not found</div>;
   }
 
-  const githubLink = project.links.find(l => l.type === 'github');
+  const githubLink = project.links?.find(l => l.type === 'github');
 
   return (
     <div className="max-w-3xl mx-auto">
