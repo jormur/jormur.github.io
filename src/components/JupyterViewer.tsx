@@ -41,28 +41,28 @@ export default function JupyterViewer({ fileUrl }: JupyterViewerProps) {
                 {cell.outputs && cell.outputs.length > 0 && (
                   <div className="space-y-2">
                     {cell.outputs.map((output: any, outIndex: number) => {
-                      if (output.data && output.data['text/plain']) {
-                        const text = Array.isArray(output.data['text/plain']) ? output.data['text/plain'].join('') : output.data['text/plain'];
-                        return (
-                          <div key={outIndex} className="text-xs text-muted font-mono whitespace-pre-wrap">
-                            {text}
-                          </div>
-                        );
+                      const parts = [];
+
+                      if (output.output_type === 'stream') {
+                        const text = Array.isArray(output.text) ? output.text.join('') : output.text;
+                        parts.push(<div key="stream" className="text-xs text-muted font-mono whitespace-pre-wrap">{text}</div>);
                       }
-                      if (output.data && output.data['text/html']) {
-                        const html = Array.isArray(output.data['text/html']) ? output.data['text/html'].join('') : output.data['text/html'];
-                        return (
-                          <div key={outIndex} className="bg-surface p-4 border utilitarian-border rounded-sm overflow-x-auto" dangerouslySetInnerHTML={{ __html: html }} />
-                        );
-                      }
-                      if (output.data && output.data['image/png']) {
-                        return (
-                          <div key={outIndex} className="mt-6 p-4 bg-surface rounded-sm border utilitarian-border">
+
+                      if (output.data?.['image/png']) {
+                        parts.push(
+                          <div key="img" className="mt-6 p-4 bg-surface rounded-sm border utilitarian-border">
                             <img src={`data:image/png;base64,${output.data['image/png']}`} alt="Output" className="w-full h-auto rounded-sm shadow-sm opacity-90 grayscale hover:grayscale-0 transition-all duration-500" />
                           </div>
                         );
+                      } else if (output.data?.['text/html']) {
+                        const html = Array.isArray(output.data['text/html']) ? output.data['text/html'].join('') : output.data['text/html'];
+                        parts.push(<div key="html" className="bg-surface p-4 border utilitarian-border rounded-sm overflow-x-auto" dangerouslySetInnerHTML={{ __html: html }} />);
+                      } else if (output.data?.['text/plain']) {
+                        const text = Array.isArray(output.data['text/plain']) ? output.data['text/plain'].join('') : output.data['text/plain'];
+                        parts.push(<div key="text" className="text-xs text-muted font-mono whitespace-pre-wrap">{text}</div>);
                       }
-                      return null;
+
+                      return <div key={outIndex}>{parts}</div>;
                     })}
                   </div>
                 )}
