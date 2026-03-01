@@ -6,7 +6,9 @@ export default function Layout() {
   const location = useLocation();
   const isProjectPage = location.pathname.startsWith('/project');
 
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(
+    () => window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
 
   useEffect(() => {
     if (isDark) {
