@@ -18,11 +18,11 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-serif text-primary">Jordan Murillo</h1>
           <h2 className="text-xl font-mono text-muted mb-8 uppercase tracking-widest">Research Analyst</h2>
           <p className="text-xl md:text-xl leading-snug max-w-3xl font-serif mb-8">
-            Originally from Belize, I moved to Taiwan on scholarship and have since built my academic and professional career in Taipei. I earned my Master's in Applied Economics from National Chengchi University, where my research focused on empirical methods and quantitative analysis.<br /><br />
+            Originally from Belize, I moved to Taiwan on scholarship and have since built my academic and professional career in Taipei. I earned my Master's in Applied Economics from National Chengchi University, where I specialized in econometrics and causal inference.<br /><br />
 
-            I currently work as a Research Analyst at MacroMicro, where I analyze macroeconomic and financial data, contribute to research publications, and develop quant tools.<br /><br />
+            I currently work as a Research Analyst at MacroMicro, where I analyze macroeconomic and financial data and contribute to research publications.<br /><br />
 
-            I'm always open to meaningful conversations. Feel free to reach out.
+            I'm always open to thoughtful conversations. Feel free to reach out.
           </p>
 
           {/* Contact */}
