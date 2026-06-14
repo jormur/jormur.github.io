@@ -9,6 +9,9 @@ const iconMap: Record<string, any> = {
   github: Database
 };
 
+const publicAssetUrl = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 export default function Home() {
   return (
     <div className="space-y-24">
@@ -51,7 +54,7 @@ export default function Home() {
         {/* Headshot */}
         <div className="w-48 h-48 md:w-64 md:h-64 shrink-0 overflow-hidden">
           <img
-            src="/assets/img/headshot.JPG"
+            src={publicAssetUrl('/assets/img/headshot.JPG')}
             alt="Jordan Murillo"
             className="w-full h-full object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
             referrerPolicy="no-referrer"

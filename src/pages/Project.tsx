@@ -4,6 +4,9 @@ import { ArrowLeft, Calendar, Clock, Github } from 'lucide-react';
 import projectsData from '../data/projects.json';
 import JupyterViewer from '../components/JupyterViewer';
 
+const publicAssetUrl = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 export default function Project() {
   const { id } = useParams();
 
@@ -58,7 +61,7 @@ export default function Project() {
 
         {/* Notebook Start */}
         {project.notebookFile && (
-          <JupyterViewer fileUrl={project.notebookFile} />
+          <JupyterViewer fileUrl={publicAssetUrl(project.notebookFile)} />
         )}
       </section>
     </div>
